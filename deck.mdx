@@ -1,0 +1,252 @@
+import { CodeSurfer } from 'code-surfer'
+import { nightOwl } from "@code-surfer/themes"
+
+export const theme = nightOwl
+
+# HTML is Hard
+
+(well, the syntax is easy, but semantics are complicated)
+
+---
+
+<CodeSurfer>
+
+```html
+<!doctype html>
+
+<html>
+  <body>
+    Hello, world!
+  </body>
+</html>
+```
+</CodeSurfer>
+
+---
+
+import i1d from './assets/1/screenshot-desktop.png'
+
+# LGTM
+
+<img src={i1d} />
+
+---
+
+import i1m from './assets/1/screenshot-mobile.png'
+
+# And on mobile?
+
+<img src={i1m} style={{maxHeight: "70vh"}} />
+
+---
+
+Even the seemingly most basic HTML document isn't ready for any device.
+
+---
+
+<CodeSurfer>
+
+```html
+<!doctype html>
+
+<html>
+  <body>
+    Hello, world!
+  </body>
+</html>
+```
+
+```html
+<!doctype html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    Hello, world!
+  </body>
+</html>
+```
+</CodeSurfer>
+
+---
+
+import i2m from './assets/2/screenshot-mobile.png'
+
+# And on mobile?
+
+<img src={i2m} style={{maxHeight: "70vh"}} />
+
+---
+
+# Time to add content!
+
+---
+
+<CodeSurfer>
+
+```html
+<!doctype html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    Hello, world!
+  </body>
+</html>
+```
+
+```html
+<!doctype html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    Hello, world!
+    <br />
+    Gangway belay bilged on her anchor...
+    <br />
+    Swing the lead hogshead long clothes...
+  </body>
+</html>
+```
+
+</CodeSurfer>
+
+---
+
+import i3d from './assets/3/screenshot-desktop.png'
+
+# Content 🎉
+
+<img src={i3d} style={{maxHeight: "70vh"}} />
+
+<Steps>
+
+However, I'm not content with this
+
+</Steps>
+
+---
+
+> The HTML `<br>` element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.
+
+<Steps>
+
+> Note: Do not use `<br>` to create margins between paragraphs; wrap them in `<p>` elements and use the CSS `margin` property to control their size.
+
+</Steps>
+
+---
+
+<CodeSurfer>
+
+```html
+<!doctype html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    Hello, world!
+    <br />
+    Gangway belay bilged on her anchor...
+    <br />
+    Swing the lead hogshead long clothes...
+  </body>
+</html>
+```
+
+```html
+<!doctype html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <p>Hello, world!</p>
+    <p>Gangway belay bilged on her anchor...</p>
+    <p>Swing the lead hogshead long clothes...</p>
+  </body>
+</html>
+```
+
+</CodeSurfer>
+
+---
+
+import i4d from './assets/4/screenshot-desktop.png'
+
+<img src={i4d} style={{maxHeight: "70vh"}} />
+
+---
+
+# That's just one scenario
+
+There are heaps. To name a few…
+
+<Steps>
+
+- `H1` through `H6`
+- HTML tables
+- `ol` vs. `ul` (or the lack thereof)
+- `nav`
+- `header`
+- `footer`
+- `main`
+- `section`
+- `article`
+- `figure`
+- `aside`
+- `details`
+- `mark`
+- `summary`
+- `time`
+- `dd` and friends
+- `pre`
+- `blockquote`
+- `address`
+- Dare I mention HTML tag attributes?
+- Side note: That ellipsis above is actually one dedicated unicode character; HTML is hard, but so is writing content on a computer.
+
+</Steps>
+
+---
+
+<Steps>
+
+There are over a hundred HTML tags available for use today.
+
+Most of us use a handful at best.
+
+</Steps>
+
+---
+
+# Why does it matter?
+
+<Steps>
+
+A lot of the time, it doesn’t!
+
+But “a lot of the time” isn't a healthy attitude to take (think: accessibility and SEO)
+
+Other times, you might end up making life harder for yourself
+
+</Steps>
+
+<Notes>
+
+- A lot of the time, it doesn’t! - your browser will probably render the thing just fine. And maybe you can click things perfectly fine.
+- But a lot of... - I'm not going to repeat accessibility workshops now, but the argument is the same - do things right, and you can make life easier for people who might have life a lot harder than you
+- But a lot of... - Or maybe it's as simple as catering to the fact your mouse and keyboard isn't the one and only input peripheral combination in use across the entire world (touchscreen, keyboard only, etc)
+- Other times... - Humans are selfish by nature, so maybe this one will gain your interest: Browsers have been built with specific behaviours taken into account for all of the various tags (like that margin on the P tag that wasn't there on the br tag version)
+
+</Notes>
