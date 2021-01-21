@@ -250,3 +250,205 @@ Other times, you might end up making life harder for yourself
 - Other times... - Humans are selfish by nature, so maybe this one will gain your interest: Browsers have been built with specific behaviours taken into account for all of the various tags (like that margin on the P tag that wasn't there on the br tag version)
 
 </Notes>
+
+---
+
+# Common HTML misuse (with solutions)
+
+---
+
+# Using `div` and `span`
+
+Solution…
+
+<Steps>
+
+Don’t.
+
+</Steps>
+
+---
+
+# Usage Notes of `div`
+
+> The `<div>` element should be used only when no other semantic element (such as `<article>` or `<nav>`) is appropriate.
+
+<small><em>Mozilla Developer Network</em></small>
+
+<Notes>
+
+- The div element is considered a last resort. The reality for many of us is it's our first port of call.
+
+</Notes>
+
+---
+
+# Usage Notes of `span`
+
+> [The `span` element] does not inherently represent anything… It should be used only when no other semantic element is appropriate.
+
+<small><em>Mozilla Developer Network</em></small>
+
+<Notes>
+
+- The span element is considered a last resort. The reality for many of us is it's our first port of call.
+
+</Notes>
+
+---
+
+# What do we use instead?
+
+<Steps>
+
+- Reminder: There are **over 100 actively supported HTML tags.**
+- Reminder: Many of these tags have been designed to solve the specific problems you, and end users face.
+
+</Steps>
+
+---
+
+# What do we use instead?
+
+If it's a span ye be thinking of, consider:
+
+---
+
+- `a`
+- `abbr`
+- `acronym`
+- `audio` (if it has visible controls)
+- `b`
+- `bdi`
+- `bdo`
+- `big`
+- `br`
+- `button`
+- `canvas`
+- `cite`
+- `code`
+- `data`
+- `datalist`
+- `del`
+- `dfn`
+- `em`
+- `embed`
+- `i`
+- `iframe`
+- `img`
+- `input`
+- `ins`
+- `kbd`
+- `label`
+- `map`
+- `mark`
+- `meter`
+- `noscript`
+- `object`
+- `output`
+- `picture`
+- `progress`
+- `q`
+- `ruby`
+- `s`
+- `samp`
+- `script`
+- `select`
+- `slot`
+- `small`
+- `span`
+- `strong`
+- `sub`
+- `sup`
+- `svg`
+- `template`
+- `textarea`
+- `time`
+- `u`
+- `tt`
+- `var`
+- `video`
+- `wbr`
+
+---
+
+# What do we use instead?
+
+If it's a div ye be thinking of, consider:
+
+---
+
+- `address`
+- `article`
+- `aside`
+- `blockquote`
+- `details`
+- `dialog`
+- `dd`
+- `div`
+- `dl`
+- `dt`
+- `fieldset`
+- `figcaption`
+- `figure`
+- `footer`
+- `form`
+- `h1` through `h6`
+- `header`
+- `hgroup`
+- `hr`
+- `li`
+- `main`
+- `nav`
+- `ol`
+- `p`
+- `pre`
+- `section`
+- `table`
+- `ul`
+
+---
+
+# Okay that's a lot
+
+<Steps>
+
+You're not expected to remember all of them.
+
+But you should at least remember that they exist, and how to find them.
+
+(don't forget search engines are a thing)
+
+</Steps>
+
+<Notes>
+
+Hey remember Google is a thing
+
+- Maybe searching "HTML tag for image with caption" will find what you're after
+
+</Notes>
+
+---
+
+# Here's my points
+
+<Steps>
+
+- HTML, written well, can make life easier for consumers
+- HTML, written well, can make life easier for you
+- HTML is big. HTML _is hard_. Be unafraid to always learn new things.
+
+</Steps>
+
+<Notes>
+
+1. HTML is designed to accomodate an audience far bigger than we consider day to day. Write it well, and you can make life easier for so many.
+2. Even if you don't care about other people, writing HTML well can make life easier for you because you can get browser defaults that you might not have realised already existed (and instead written a heap of CSS and/or JS, or even more HTML)
+3. Our job as software developers is to research and implement solutions. Emphasis on research - every one of us should be unafraid to spend time finding out how to do something right, **because it's our job to**
+
+</Notes>
+
+---
+
+ye
